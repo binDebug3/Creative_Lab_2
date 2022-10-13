@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dungeons and Dragons Spells</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Dungeons and Dragons Spells</a>
+    </nav>
+    
+    <div class="header">
+      <h1>Spells</h1>
+    </div>
+    
+    <div class="fancy_form">
+      <form>
+        <label id="spellName">Spell Name:</label>
+        <input id="spellInput" type="text"></input><br/>
+        <input id="spellSubmit" type="submit" value="Submit"></input>
+      </form>
+      
+      <label class="descriptor" for="myCheck">Show Descriptions:</label>
+      <input type="checkbox" id="myCheck" onclick="myFunction()">
+      
+      <label class="descriptor" for="checkDeep">Hide Spells from Deep Magic:</label>
+      <input type="checkbox" id="checkDeep" onclick="selectDeepFunc()">
+    </div>
+    
+    <script>
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck");
+      var desc = document.getElementsByClassName("description");
+      for (let i = 0; i < desc.length; i++) {
+        if (checkBox.checked == true){
+          desc[i].style.display = "block";
+        } else {
+          desc[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    
+    
+    <div class="spell spellTitle">
+      <h2 class="nameTitle">Name</h2>
+      <p class="level">Level</p>
+      <p class="school">School</p>
+      <p class="casting_time">Cast Time</p>
+      <p class="duration">Duration</p>
+      <p class="range">Range</p>
+      <p class="components">Requires</p>
+      <p class="concentration">Conc</p>
+      <p class="dnd_class">Classes</p>
+      <p class="source">Source</p>
+    </div>'
+    
+    <div id="spellResults"></div>
+    
+    <footer>
+      <p class="pull-left"><a href="https://github.com/BYU-CS-260/lab2-javascript-binDebug3.git" 
+      target="_blank">https://github.com/BYU-CS-260/lab2-javascript-binDebug3.git</p></a>
+    </footer>'
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" 
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" 
+        crossorigin="anonymous">
+    </script>
+    
+    <script text="type/javascript" src="script.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+:root {
+  --purple: #210152;
+  --white: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-family: Trebuchet MS, sans-serif !important;
+    background-color: var(--purple);
+}
+* {
+    font-family: Trebuchet MS;
+}
+
+h2 {
+    font-size: larger;
+}
+h1 {
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bolder;
+}
+
+.header {
+    text-align: left;
+    margin: 10px 40px;
+    padding-top: 20px;
+}
+.fancy_form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 40px;
+    color: var(--purple);
+    padding-bottom: 40px;
+}
+#spellSubmit {
+    margin: 1px 170px;
+}
+label {
+    margin: 20px 10px 20px 70px;
+}
+#myCheck,
+#checkDeep {
+    height: 65px;
+}
+
+.spellResults {
+    margin: 20px 20px;
+}
+.spell {
+    color: #111;
+    background-color: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px 40px 20px 40px;
+    /*border-style: solid;*/
+    border-top-color: var(--purple);
+    /*border-radius: 25px;*/
+    padding: 10px;
+    border-top: solid;
+}
+.spellTitle {
+    color: var(--white);
+    background-color: var(--purple);
+    margin: 0px 40px;
+    border-top-color: #111;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-top: 20px;
+}
+.name {
+    width: 200px;
+    color: var(--purple);
+}
+.nameTitle {
+    width: 200px;
+    color: var(--white);
+}
+.level {
+    width: 80px;
+    margin: 0px;
+}
+.school {
+    width: 120px;
+    margin: 0px;
+}
+.casting_time {
+    width: 80px;
+    /*height: 50px;*/
+    margin: 0px;
+}
+.duration {
+    width: 130px;
+    margin: 0px;
+}
+.range {
+    width: 75px;
+    margin: 0px;
+}
+.components {
+    width: 75px;
+    margin: 0px;
+}
+.concentration {
+    width: 50px;
+    margin: 0px;
+}
+.dnd_class {
+    width: 160px;
+    margin: 0px;
+    padding-right: 5px;
+}
+.description {
+    margin: 0px;
+    display: none;
+    color: #333;
+    padding: 10px;
+}
+.source {
+    width: 150px;
+    margin: 0px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--white);
+  height: 50px;
+  padding: 20px;
+  font-size: small;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .level,
+    .school,
+    .casting_time, 
+    .duration,
+    .range,
+    .components,
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 501) and (max-width: 540px) {
+    .school,
+    .casting_time, 
+    .duration,
+    .range,
+    .components,
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 341px) and (max-width: 620px) {
+    .casting_time, 
+    .duration,
+    .range,
+    .components,
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 621px) and (max-width: 750px) {
+    .duration,
+    .range,
+    .components,
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 751px) and (max-width: 825px) {
+    .range,
+    .components,
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 826px) and (max-width: 900px) {
+    .components,
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+    .concentration,
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    .dnd_class,
+    .source {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1101px) and (max-width: 1220px) {
+    .source {
+        display: none;
+    }
+}
